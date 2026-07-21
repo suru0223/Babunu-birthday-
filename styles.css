@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap');
+
 /* ============================================
    BIRTHDAY WEBSITE - ROMANTIC THEME
    For: KITTY from SURU
@@ -10,7 +12,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     justify-content: center;
@@ -101,24 +103,42 @@ body {
 }
 
 .title-text {
+    font-family: 'Playfair Display', serif;
     font-size: 60px;
+    font-weight: 900;
     color: white;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    letter-spacing: 2px;
+    text-shadow: 
+        0 0 20px rgba(255, 20, 60, 0.8),
+        0 0 40px rgba(255, 20, 60, 0.6),
+        0 0 60px rgba(255, 20, 60, 0.4),
+        2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
 }
 
 .name-text {
+    font-family: 'Playfair Display', serif;
     font-size: 50px;
+    font-weight: 700;
     color: #fff;
     margin: 10px 0;
     animation: pulse 1.5s ease-in-out infinite;
+    text-shadow: 
+        0 0 20px rgba(255, 20, 60, 0.9),
+        0 0 30px rgba(255, 20, 60, 0.7),
+        0 0 50px rgba(255, 20, 60, 0.5),
+        2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
 }
 
 .date-text {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 15px;
+    text-shadow: 
+        0 0 10px rgba(255, 20, 60, 0.6),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .rose-decoration {
@@ -263,13 +283,18 @@ body {
 }
 
 .cake-title {
+    font-family: 'Playfair Display', serif;
     font-size: 40px;
     color: white;
     animation: slideDown 0.8s ease-out;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 
+        0 0 20px rgba(255, 20, 60, 0.8),
+        0 0 40px rgba(255, 20, 60, 0.6),
+        2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cake-subtitle {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.9);
     animation: slideUp 0.8s ease-out;
@@ -295,10 +320,15 @@ body {
 }
 
 .slide-title {
+    font-family: 'Playfair Display', serif;
     font-size: 32px;
+    font-weight: 700;
     color: #d63031;
     margin-bottom: 30px;
     animation: slideDown 0.8s ease-out;
+    text-shadow: 
+        0 0 15px rgba(220, 20, 60, 0.5),
+        0 0 25px rgba(220, 20, 60, 0.3);
 }
 
 @keyframes slideDown {
@@ -513,11 +543,15 @@ body {
 }
 
 .page-message {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     color: #d63031;
     margin-top: 15px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
+    text-shadow: 
+        0 0 10px rgba(220, 20, 60, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================
@@ -553,9 +587,14 @@ body {
 }
 
 .message-title {
+    font-family: 'Playfair Display', serif;
     font-size: 28px;
+    font-weight: 700;
     color: #d63031;
     margin-bottom: 20px;
+    text-shadow: 
+        0 0 15px rgba(220, 20, 60, 0.5),
+        0 0 25px rgba(220, 20, 60, 0.3);
 }
 
 .cute-messages {
@@ -565,7 +604,9 @@ body {
 }
 
 .msg-item {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
+    font-weight: 600;
     color: #2d3436;
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.7);
@@ -616,18 +657,26 @@ body {
     background: rgba(255, 255, 255, 0.95);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(220, 20, 60, 0.3);
     max-width: 600px;
 }
 
 .love-title {
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
+    font-weight: 700;
     color: #d63031;
     margin-bottom: 20px;
     animation: slideDown 0.8s ease-out;
+    text-shadow: 
+        0 0 15px rgba(220, 20, 60, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .love-message-text {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 14px;
     line-height: 1.8;
     color: #2d3436;
@@ -644,12 +693,16 @@ body {
     font-weight: bold;
     color: #d63031;
     animation-delay: 0.4s;
+    text-shadow: 
+        0 0 10px rgba(220, 20, 60, 0.4);
 }
 
 .love-message-text .angel {
     font-size: 18px;
     font-weight: bold;
     animation-delay: 0.6s;
+    text-shadow: 
+        0 0 8px rgba(220, 20, 60, 0.3);
 }
 
 .love-message-text .signature {
@@ -658,6 +711,8 @@ body {
     color: #d63031;
     margin-top: 20px;
     animation-delay: 0.8s;
+    text-shadow: 
+        0 0 10px rgba(220, 20, 60, 0.4);
 }
 
 /* ============================================
@@ -704,965 +759,64 @@ body {
 }
 
 .final-title {
+    font-family: 'Playfair Display', serif;
     font-size: 36px;
+    font-weight: 900;
     color: white;
     margin-bottom: 10px;
     animation: scaleIn 1s ease-out;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.final-wish {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.95);
-    max-width: 500px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.final-signature {
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.restart-btn {
-    padding: 12px 30px;
-    font-size: 16px;
-    background: white;
-    color: #d63031;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-}
-
-.restart-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* ============================================
-   NAVIGATION & CONTROLS
-   ============================================ */
-
-.nav-buttons {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 20px;
-    z-index: 20;
-}
-
-.nav-btn {
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 2px solid #d63031;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    color: #d63031;
-    transition: all 0.3s ease;
-}
-
-.nav-btn:hover {
-    background: #d63031;
-    color: white;
-    transform: scale(1.05);
-}
-
-.slide-indicators {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 20;
-}
-
-.indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid white;
-}
-
-.indicator.active {
-    background: white;
-    width: 30px;
-    border-radius: 6px;
-}
-
-.music-player {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    z-index: 25;
-}
-
-.music-toggle {
-    padding: 10px 15px;
-    background: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #d63031;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.music-toggle:hover {
-    transform: scale(1.05);
-}
-
-.song-name {
-    font-size: 12px;
-    color: white;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-weight: 500;
-}
-
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
-
-@media (max-width: 768px) {
-    .container {
-        height: auto;
-        min-height: 100vh;
-        border-radius: 0;
-    }
-
-    .title-text {
-        font-size: 40px;
-    }
-
-    .name-text {
-        font-size: 35px;
-    }
-
-    .slide-title {
-        font-size: 24px;
-    }
-
-    .photo-grid {
-        grid-template-columns: 1fr 1fr;
-        max-width: 100%;
-    }
-
-    .nav-buttons {
-        gap: 10px;
-    }
-
-    .nav-btn {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
-
-    .love-message-box {
-        padding: 20px;
-    }
-
-    .final-title {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 480px) {
-    .content {
-        padding: 20px;
-    }
-
-    .title-text {
-        font-size: 32px;
-    }
-
-    .name-text {
-        font-size: 28px;
-    }
-
-    .photo-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .message-slide {
-        flex-direction: column;
-    }
-
-    .teddy-left, .teddy-right {
-        font-size: 40px;
-    }
-
-    .music-player {
-        top: 10px;
-        right: 10px;
-        flex-direction: column;
-    }
-
-    .song-name {
-        font-size: 10px;
-    }
-}/* ============================================
-   BIRTHDAY WEBSITE - ROMANTIC THEME
-   For: KITTY from SURU
-   ============================================ */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    overflow: hidden;
-}
-
-.container {
-    width: 100%;
-    max-width: 1000px;
-    height: 600px;
-    position: relative;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-}
-
-/* ============================================
-   SLIDE STYLING
-   ============================================ */
-
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide.active {
-    opacity: 1;
-    z-index: 10;
-}
-
-.content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    text-align: center;
-}
-
-/* ============================================
-   SLIDE 1: TITLE SLIDE
-   ============================================ */
-
-.slide-1 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.floating-hearts {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-.heart {
-    position: absolute;
-    font-size: 40px;
-    animation: float 3s ease-in-out infinite;
-}
-
-.heart:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
-.heart:nth-child(2) { left: 80%; top: 30%; animation-delay: 0.5s; }
-.heart:nth-child(3) { left: 20%; top: 70%; animation-delay: 1s; }
-.heart:nth-child(4) { left: 85%; top: 65%; animation-delay: 1.5s; }
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-}
-
-.title-container {
-    z-index: 2;
-    animation: scaleIn 1s ease-out;
-}
-
-.title-text {
-    font-size: 60px;
-    color: white;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 
+        0 0 20px rgba(255, 20, 60, 0.8),
+        0 0 40px rgba(255, 20, 60, 0.6),
+        2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
 }
 
-.name-text {
-    font-size: 50px;
-    color: #fff;
-    margin: 10px 0;
-    animation: pulse 1.5s ease-in-out infinite;
-}
-
-.date-text {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.9);
-    margin-top: 15px;
-}
-
-.rose-decoration {
-    position: absolute;
-    bottom: 30px;
-    font-size: 40px;
-    animation: rotate 4s linear infinite;
-}
-
-.rose-decoration span {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-@keyframes rotate {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(10deg); }
-}
-
-@keyframes scaleIn {
-    from {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-}
-
-/* ============================================
-   SLIDE CAKE: BIRTHDAY CAKE
-   ============================================ */
-
-.slide-cake {
-    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
-}
-
-.cake-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-.cake {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    animation: cakeBounce 1s ease-out;
-}
-
-.cake-layer {
-    font-size: 60px;
-    animation: layerFlip 0.8s ease-out;
-}
-
-.cake-bottom {
-    animation-delay: 0s;
-}
-
-.cake-middle {
-    animation-delay: 0.2s;
-}
-
-@keyframes layerFlip {
-    from {
-        transform: rotateY(90deg) scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: rotateY(0deg) scale(1);
-        opacity: 1;
-    }
-}
-
-.cake-candles {
-    display: flex;
-    gap: 15px;
-    font-size: 35px;
-}
-
-.candle {
-    animation: flicker 0.6s ease-in-out infinite;
-}
-
-.candle:nth-child(1) { animation-delay: 0s; }
-.candle:nth-child(2) { animation-delay: 0.2s; }
-.candle:nth-child(3) { animation-delay: 0.4s; }
-
-@keyframes flicker {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.7; transform: scale(1.1); }
-}
-
-@keyframes cakeBounce {
-    from {
-        transform: scale(0) rotateZ(-360deg);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1) rotateZ(0deg);
-        opacity: 1;
-    }
-}
-
-.confetti {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.confetti span {
-    position: absolute;
-    font-size: 30px;
-    animation: confettiFall 3s ease-in infinite;
-}
-
-.confetti span:nth-child(1) { left: 10%; animation-delay: 0s; }
-.confetti span:nth-child(2) { left: 30%; animation-delay: 0.5s; }
-.confetti span:nth-child(3) { left: 50%; animation-delay: 1s; }
-.confetti span:nth-child(4) { left: 70%; animation-delay: 1.5s; }
-.confetti span:nth-child(5) { left: 85%; animation-delay: 2s; }
-
-@keyframes confettiFall {
-    0% {
-        transform: translateY(-50px) rotateZ(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(500px) rotateZ(360deg);
-        opacity: 0;
-    }
-}
-
-.cake-title {
-    font-size: 40px;
-    color: white;
-    animation: slideDown 0.8s ease-out;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.cake-subtitle {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.9);
-    animation: slideUp 0.8s ease-out;
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* ============================================
-   PHOTO GALLERY SLIDES
-   ============================================ */
-
-.slide-2, .slide-3, .slide-4 {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-}
-
-.slide-title {
-    font-size: 32px;
-    color: #d63031;
-    margin-bottom: 30px;
-    animation: slideDown 0.8s ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px 0;
-}
-
-.photo-item {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border: 3px solid #fff;
-}
-
-.photo-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Photo Animations */
-.zoom-in {
-    animation: zoomIn 1s ease-out;
-}
-
-.slide-right {
-    animation: slideInRight 1s ease-out;
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-out;
-}
-
-.rotate-in {
-    animation: rotateIn 1s ease-out;
-}
-
-.bounce-in {
-    animation: bounceIn 1s ease-out;
-}
-
-.slide-left {
-    animation: slideInLeft 1s ease-out;
-}
-
-.flip-in {
-    animation: flipIn 1s ease-out;
-}
-
-.pulse-in {
-    animation: pulseIn 1s ease-out;
-}
-
-.swing-in {
-    animation: swingIn 1s ease-out;
-}
-
-.slide-up {
-    animation: slideInUp 1s ease-out;
-}
-
-.fade-scale {
-    animation: fadeScale 1s ease-out;
-}
-
-.slide-down {
-    animation: slideInDown 1s ease-out;
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes rotateIn {
-    from {
-        transform: rotate(-45deg) scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: rotate(0) scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes bounceIn {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    50% { transform: scale(1.1); }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes flipIn {
-    from {
-        transform: perspective(400px) rotateY(90deg);
-        opacity: 0;
-    }
-    to {
-        transform: perspective(400px) rotateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes pulseIn {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
-@keyframes swingIn {
-    from {
-        transform: rotate(-30deg);
-        opacity: 0;
-    }
-    to {
-        transform: rotate(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeScale {
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.page-message {
-    font-size: 18px;
-    color: #d63031;
-    margin-top: 15px;
-    font-style: italic;
-    font-weight: 500;
-}
-
-/* ============================================
-   SLIDE 5: CUTE MESSAGES
-   ============================================ */
-
-.slide-5 {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-}
-
-.message-slide {
-    position: relative;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.teddy-left, .teddy-right {
-    font-size: 60px;
-    animation: sway 2s ease-in-out infinite;
-}
-
-.teddy-right {
-    animation-delay: 0.5s;
-}
-
-@keyframes sway {
-    0%, 100% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
-}
-
-.message-box {
-    flex: 1;
-}
-
-.message-title {
-    font-size: 28px;
-    color: #d63031;
-    margin-bottom: 20px;
-}
-
-.cute-messages {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.msg-item {
-    font-size: 16px;
-    color: #2d3436;
-    padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    animation: slideIn 0.8s ease-out;
-}
-
-.msg-1 { animation-delay: 0.2s; }
-.msg-2 { animation-delay: 0.4s; }
-.msg-3 { animation-delay: 0.6s; }
-.msg-4 { animation-delay: 0.8s; }
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* ============================================
-   SLIDE 6: LOVE MESSAGE
-   ============================================ */
-
-.slide-6 {
-    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
-    padding: 20px;
-}
-
-.love-message-slide {
-    gap: 15px;
-}
-
-.rose-top, .rose-bottom {
-    font-size: 30px;
-    animation: bounce 2s ease-in-out infinite;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
-
-.love-message-box {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-}
-
-.love-title {
-    font-size: 24px;
-    color: #d63031;
-    margin-bottom: 20px;
-    animation: slideDown 0.8s ease-out;
-}
-
-.love-message-text {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #2d3436;
-    text-align: justify;
-}
-
-.love-message-text p {
-    margin-bottom: 12px;
-    animation: fadeIn 1s ease-out;
-}
-
-.love-message-text .highlight {
-    font-size: 16px;
-    font-weight: bold;
-    color: #d63031;
-    animation-delay: 0.4s;
-}
-
-.love-message-text .angel {
-    font-size: 18px;
-    font-weight: bold;
-    animation-delay: 0.6s;
-}
-
-.love-message-text .signature {
-    font-size: 16px;
-    font-weight: bold;
-    color: #d63031;
-    margin-top: 20px;
-    animation-delay: 0.8s;
-}
-
-/* ============================================
-   SLIDE 7: FINAL SLIDE
-   ============================================ */
-
-.slide-7 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.falling-hearts {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.heart-fall {
-    position: absolute;
-    font-size: 40px;
-    animation: fall 4s ease-in infinite;
-}
-
-.heart-fall:nth-child(1) { left: 10%; animation-delay: 0s; }
-.heart-fall:nth-child(2) { left: 30%; animation-delay: 0.5s; }
-.heart-fall:nth-child(3) { left: 50%; animation-delay: 1s; }
-.heart-fall:nth-child(4) { left: 70%; animation-delay: 1.5s; }
-.heart-fall:nth-child(5) { left: 85%; animation-delay: 2s; }
-
-@keyframes fall {
-    0% {
-        transform: translateY(-100px);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(600px) rotateZ(360deg);
-        opacity: 0;
-    }
-}
-
-.final-slide {
-    z-index: 2;
-    gap: 20px;
-}
-
-.final-title {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 10px;
-    animation: scaleIn 1s ease-out;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
 .final-wish {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.95);
     max-width: 500px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-shadow: 
+        0 0 10px rgba(255, 20, 60, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .final-signature {
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
     margin: 10px 0;
+    text-shadow: 
+        0 0 15px rgba(255, 20, 60, 0.6),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .restart-btn {
+    font-family: 'Cormorant Garamond', serif;
     padding: 12px 30px;
     font-size: 16px;
+    font-weight: 600;
     background: white;
     color: #d63031;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    font-weight: bold;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.2),
+        0 0 15px rgba(220, 20, 60, 0.3);
     margin-top: 20px;
 }
 
 .restart-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(220, 20, 60, 0.5);
 }
 
 /* ============================================
@@ -1680,6 +834,7 @@ body {
 }
 
 .nav-btn {
+    font-family: 'Cormorant Garamond', serif;
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.9);
     border: 2px solid #d63031;
@@ -1695,6 +850,7 @@ body {
     background: #d63031;
     color: white;
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(220, 20, 60, 0.5);
 }
 
 .slide-indicators {
@@ -1721,6 +877,7 @@ body {
     background: white;
     width: 30px;
     border-radius: 6px;
+    box-shadow: 0 0 10px rgba(220, 20, 60, 0.6);
 }
 
 .music-player {
@@ -1734,6 +891,7 @@ body {
 }
 
 .music-toggle {
+    font-family: 'Cormorant Garamond', serif;
     padding: 10px 15px;
     background: white;
     border: none;
@@ -1742,20 +900,26 @@ body {
     font-weight: bold;
     color: #d63031;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.1),
+        0 0 10px rgba(220, 20, 60, 0.3);
 }
 
 .music-toggle:hover {
     transform: scale(1.05);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.2),
+        0 0 15px rgba(220, 20, 60, 0.5);
 }
 
 .song-name {
+    font-family: 'Cormorant Garamond', serif;
     font-size: 12px;
     color: white;
     background: rgba(0, 0, 0, 0.3);
     padding: 5px 10px;
     border-radius: 10px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* ============================================
@@ -1771,10 +935,12 @@ body {
 
     .title-text {
         font-size: 40px;
+        letter-spacing: 2px;
     }
 
     .name-text {
         font-size: 35px;
+        letter-spacing: 1px;
     }
 
     .slide-title {
@@ -1811,6 +977,7 @@ body {
 
     .title-text {
         font-size: 32px;
+        letter-spacing: 1px;
     }
 
     .name-text {
