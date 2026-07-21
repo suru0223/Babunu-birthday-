@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="background-music">
-        <audio id="bgMusic" preload="auto">
+        <audio id="bgMusic" preload="auto" crossorigin="anonymous">
             <source src="https://ia801403.us.archive.org/26/items/arijit_singh_enna_sona/Enna%20Sona%20-%20OK%20Jaanu%20%28arijit%20singh%29.mp3" type="audio/mpeg">
         </audio>
     </div>
@@ -179,6 +179,169 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const bgMusic = document.getElementById('bgMusic');
+        const playBtn = document.getElementById('playBtn');
+        const songName = document.getElementById('songName');
+
+        const songs = [
+            {
+                url: 'https://ia801403.us.archive.org/26/items/arijit_singh_enna_sona/Enna%20Sona%20-%20OK%20Jaanu%20%28arijit%20singh%29.mp3',
+                name: '🎵 ENNA Sona - Arijit Singh'
+            },
+            {
+                url: 'https://ia801405.us.archive.org/1/items/gehra_hua_arijit_singh/Gehra%20hua%20-%20Arijit%20Singh%20%28SoundtrackBD.com%29.mp3',
+                name: '🎵 Gehra Hua - Arijit Singh'
+            },
+            {
+                url: 'https://ia801405.us.archive.org/32/items/manjha/Manjha%20-%20Vishal%20Mishra%20%28320Kbps%29%20SoundtrackBD.com.mp3',
+                name: '🎵 Manjha - Vishal Mishra'
+            }
+        ];
+
+        let currentSongIndex = 0;
+        let isPlaying = false;
+
+        function init() {
+            showSlide(0);
+            updateIndicators();
+            setupMusicPlayer();
+        }
+
+        function showSlide(n) {
+            if (n >= slides.length) {
+                currentSlide = 0;
+            } else if (n < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = n;
+            }
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function previousSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function goToSlide(n) {
+            showSlide(n);
+        }
+
+        function updateIndicators() {
+            indicators.forEach((ind, index) => {
+                if (index === currentSlide) {
+                    ind.classList.add('active');
+                } else {
+                    ind.classList.remove('active');
+                }
+            });
+        }
+
+        function restartSlideshow() {
+            showSlide(0);
+            if (isPlaying) {
+                bgMusic.currentTime = 0;
+            }
+        }
+
+        function setupMusicPlayer() {
+            if (bgMusic) {
+                bgMusic.src = songs[0].url;
+                updateSongDisplay();
+                
+                bgMusic.addEventListener('ended', () => {
+                    nextSong();
+                });
+            }
+        }
+
+        function toggleMusic() {
+            if (!bgMusic) return;
+
+            if (isPlaying) {
+                bgMusic.pause();
+                playBtn.textContent = '🎵 Play Music';
+                isPlaying = false;
+            } else {
+                bgMusic.play().catch(err => {
+                    console.log('Autoplay prevented:', err);
+                });
+                playBtn.textContent = '⏸ Pause Music';
+                isPlaying = true;
+            }
+        }
+
+        function nextSong() {
+            if (!bgMusic) return;
+            
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            bgMusic.src = songs[currentSongIndex].url;
+            updateSongDisplay();
+            
+            if (isPlaying) {
+                bgMusic.play();
+            }
+        }
+
+        function updateSongDisplay() {
+            if (songName) {
+                songName.textContent = songs[currentSongIndex].name;
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') previousSlide();
+            if (e.key === ' ') {
+                e.preventDefault();
+                toggleMusic();
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', init);
+
+        document.addEventListener('click', () => {
+            if (bgMusic && !isPlaying && bgMusic.paused) {
+                bgMusic.play().catch(err => console.log('Autoplay:', err));
+                playBtn.textContent = '⏸ Pause Music';
+                isPlaying = true;
+            }
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleGesture() {
+            if (touchEndX < touchStartX - 50) {
+                nextSlide();
+            }
+            if (touchEndX > touchStartX + 50) {
+                previousSlide();
+            }
+        }
+
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleGesture();
+        });
+
+        init();
+    </script>
 </body>
 </html>
