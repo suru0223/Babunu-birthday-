@@ -1,0 +1,59 @@
+/* styles for romantic birthday site */
+:root{
+  --bg:#fff0f6;
+  --card:#fff;
+  --accent:#ff6b81;
+  --muted:#6b6b6b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:#222}
+.container{max-width:1100px;margin:36px auto;padding:20px}
+.header{text-align:center;margin-bottom:18px}
+.title{font-size:2rem;color:var(--accent);margin:0}
+.subtitle{color:var(--muted);margin:6px 0}
+.slideshow{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 8px 30px rgba(0,0,0,0.08);display:flex;gap:18px}
+.slides{flex:1;min-height:520px;position:relative;overflow:hidden;border-radius:12px;padding:18px}
+.slide{position:absolute;inset:0;padding:18px;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:180px;gap:12px;align-content:start;opacity:0;transform:translateY(20px);transition:all 600ms cubic-bezier(.2,.9,.2,1)}
+.slide.active{opacity:1;transform:translateY(0)}
+.slide img{width:100%;height:100%;object-fit:cover;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.controls{width:320px;display:flex;flex-direction:column;gap:12px}
+.controls .panel{background:linear-gradient(180deg,#fff,#fffaf0);border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.controls button{width:100%;padding:10px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+.controls .ghost{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.msg{white-space:pre-wrap;font-size:0.95rem;color:#333}
+.nav{display:flex;gap:8px}
+.small{font-size:0.85rem;color:var(--muted)}
+footer{margin-top:12px;text-align:center;color:var(--muted)}
+/* hearts background */
+.hearts{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.heart{position:absolute;opacity:0.85;width:36px;height:36px;background:var(--accent);transform:rotate(45deg);border-radius:6px;left:0;top:0}
+.heart:before,.heart:after{content:'';position:absolute;background:var(--accent);width:36px;height:36px;border-radius:50%}
+.heart:before{top:-18px;left:0}
+.heart:after{left:18px;top:0}
+/* floating animations for hearts */
+@keyframes floatUp{0%{transform:translateY(40vh) scale(0.6) rotate(0)}50%{opacity:0.9}100%{transform:translateY(-10vh) scale(1.1) rotate(360deg);opacity:0}}
+.heart.f1{left:10%;animation:floatUp 10s linear infinite}
+.heart.f2{left:25%;animation:floatUp 12s linear infinite;animation-delay:2s}
+.heart.f3{left:40%;animation:floatUp 9s linear infinite;animation-delay:1s}
+.heart.f4{left:60%;animation:floatUp 11s linear infinite;animation-delay:3s}
+.heart.f5{left:80%;animation:floatUp 13s linear infinite;animation-delay:0s}
+/* cake area */
+.cake-wrap{display:flex;align-items:center;justify-content:center;padding:12px}
+.cake{width:260px;height:260px;position:relative}
+.cake .layer{position:absolute;left:50%;transform:translateX(-50%);border-radius:14px;background:#ffe9ee;box-shadow:0 8px 16px rgba(0,0,0,0.08)}
+.cake .layer.l1{bottom:12px;width:210px;height:130px;background:#ffd6e0}
+.cake .layer.l2{bottom:104px;width:170px;height:86px;background:#fff1f4}
+.cake .frost{position:absolute;left:50%;transform:translateX(-50%);bottom:180px;width:150px;height:44px;background:linear-gradient(90deg,#fff5f8,#ffdce6);border-radius:22px}
+.cake .candles{position:absolute;left:50%;transform:translateX(-50%);top:-18px;display:flex;gap:8px}
+.cake .candle{width:10px;height:34px;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.12);border-radius:4px;position:relative}
+.cake .candle:after{content:'';position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:10px;height:10px;background:orange;border-radius:50%;box-shadow:0 0 8px rgba(255,140,0,0.9)}
+/* cake slice hidden pieces */
+.slice{position:absolute;left:50%;top:48%;transform-origin:50% 50%;transition:transform 700ms cubic-bezier(.2,.9,.2,1),opacity 500ms}
+.slice.s1{width:140px;height:140px;margin-left:-70px;margin-top:-70px}
+.slice.s1 svg{width:100%;height:100%}
+.slice.cut{transform:translateX(200px) rotate(15deg);opacity:0}
+/* confetti */
+.confetti-piece{position:fixed;width:10px;height:18px;opacity:0.95;border-radius:2px}
+@keyframes confettiFall{0%{transform:translateY(-10vh) rotate(0)}100%{transform:translateY(110vh) rotate(720deg)}}
+/* responsive */
+@media (max-width:900px){.slideshow{flex-direction:column}.controls{width:100%}}
